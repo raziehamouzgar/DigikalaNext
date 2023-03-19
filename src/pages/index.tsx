@@ -31,7 +31,7 @@ const index = ({ data }) => {
     )
 }
 
-export async function getStaticProps() {
+export async function getStaticProps(){
     const data = await axios
         .get(`${process.env.NEXT_PUBLIC_URL}/api/product`)
         .then(res => res.data)
@@ -39,6 +39,7 @@ export async function getStaticProps() {
             console.log('error:', err)
             return err
         })
+        
     if (data?.response?.status === 404) {
         return {
             notFound: true,

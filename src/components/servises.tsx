@@ -24,12 +24,12 @@ const Servises = () => {
         <section className='container grid grid-cols-4 place-items-center md:grid-cols-10 gap-5 md:gap-10 py-6 md:px-32'>
             {data.map((item, index) => {
                 return (
-                    <a className='overflow-hidden w-16 h-16' key={index}>
+                    <a className='overflow-hidden w-14 h-14' key={index}>
                         <Image src={item} alt='' className='w-full' />
                     </a>
                 )
             })}
-            <a className='flex items-center justify-center col-start-2 md:col-start-auto rounded-full w-16 h-16 bg-slate-300 text-gray-700 text-3xl overflow-hidden'>
+            <a className='flex items-center justify-center col-start-2 md:col-start-auto rounded-full w-14 h-14 bg-slate-300 text-gray-700 text-3xl overflow-hidden'>
                 ...
             </a>
         </section>

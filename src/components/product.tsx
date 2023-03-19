@@ -1,5 +1,5 @@
 import { useSelector, useDispatch } from 'react-redux'
-import { AddToCart } from '@/redux/cartStore'
+import { addToCart } from '@/redux/cartStore'
 
 import Image from 'next/image'
 import star from '../layout/assets/icons/star.png'
@@ -51,7 +51,7 @@ function Product({ data }) {
                                               className=' w-7 h-7 rounded-full font-bold
                        text-green-700 hover:bg-green-500 hover:text-white text-center text-lg '
                                               onClick={() =>
-                                                  dispatch(AddToCart(item.id))
+                                                  dispatch(addToCart([item.id, item.price]))
                                               }
                                           >
                                               +
@@ -95,7 +95,7 @@ function Product({ data }) {
                                           className=' w-7 h-7 rounded-full font-bold
                        text-green-700 hover:bg-green-500 hover:text-white text-center text-lg '
                                           onClick={() =>
-                                              dispatch(AddToCart(item.id))
+                                              dispatch(addToCart([item.id, item.price]))
                                           }
                                       >
                                           +

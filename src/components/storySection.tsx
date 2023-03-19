@@ -15,7 +15,7 @@ const Story = () => {
         <section className='container grid grid-cols-4 place-items-center md:grid-cols-9 gap-5 md:gap-10 py-6 p-3 md:px-28'>
             {data.map((item, index) => {
                 return (
-                    <a className='rounded-full overflow-hidden w-16 h-16 md:w-20 md:h-20 ring ring-pink-500 ring-offset-4' key={index}>
+                    <a className='rounded-full overflow-hidden w-16 h-16 md:w-16 md:h-16 ring ring-pink-500 ring-offset-4' key={index}>
                         <Image src={item} alt='' className='w-full' />
                     </a>
                 )
